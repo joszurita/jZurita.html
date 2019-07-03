@@ -1,0 +1,34 @@
+//Autor:Josue Zurita
+  //Descripcion: funcion que calcula los numeros primos de hay ver cual es el mayor.
+    function factorsOf(n) {
+    var factores = [];
+    for (var a = 1; a <= n; i++) {
+        if (n % a === 0) {
+        factores.push(a);
+        }
+    }
+   return factores;
+}
+
+function esPrimo(numero) {
+    for (var a=2; a<numero; a++) {
+    if (numero % a === 0) {
+        return false;
+    }
+  }
+  return numero > 1;
+}
+
+function primo(factors) {
+    var primo = [];
+    for (var a=1; a < factores.length; a++) {
+    if (esPrimo(factores[a])) {
+        primo.push(factores[a]);
+    }
+  }
+  return primo;
+}
+
+var factores = factorsOf(13195);
+var array = primos(factores);
+console.log(array[array.length-1]);
